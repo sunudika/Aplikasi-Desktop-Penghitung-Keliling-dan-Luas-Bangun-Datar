@@ -1,0 +1,17 @@
+FUtama = 0, 0, 1337, 650, C, 26, 26, 1363, 676, C
+FLPersegi = 0, 0, 0, 0, C, 52, 52, 1389, 702, C
+FKPersegi = 0, 0, 0, 0, C, 78, 78, 1415, 728, C
+FLPersegiPanjang = 0, 0, 0, 0, C, 104, 104, 1441, 754, C
+FKPersegiPanjang = 0, 0, 0, 0, C, 130, 130, 1467, 780, C
+FLSegitiga = 0, 0, 0, 0, C, 156, 156, 1493, 806, C
+FKSegitiga = 0, 0, 0, 0, C, 182, 182, 1519, 832, C
+FLJajarGenjang = 0, 0, 0, 0, C, 208, 208, 1545, 858, C
+FKJajarGenjang = 0, 0, 0, 0, C, 234, 234, 1571, 884, C
+FLLayang = 0, 0, 0, 0, C, 260, 260, 1597, 910, C
+FKLayang = 0, 0, 0, 0, C, 286, 286, 1623, 936, C
+FLBelahKetupat = 0, 0, 0, 0, C, 312, 312, 1649, 962, C
+FLTrapesium = 0, 0, 0, 0, C, 26, 26, 1363, 676, C
+FKTrapesium = 0, 0, 0, 0, C, 52, 52, 1389, 702, C
+FLLingkaran = 0, 0, 0, 0, C, 78, 78, 1415, 728, C
+FKLingkaran = 0, 0, 0, 0, C, 104, 104, 1441, 754, C
+FKBelahKetupat = 178, 223, 1515, 873, C, 182, 182, 1519, 832, C
