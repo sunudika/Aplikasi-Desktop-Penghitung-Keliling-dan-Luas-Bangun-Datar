@@ -1,12 +1,16 @@
 VERSION 5.00
 Begin VB.Form FKBelahKetupat 
    BackColor       =   &H80000014&
+   BorderStyle     =   1  'Fixed Single
    Caption         =   "Keliling Belah Ketupat"
    ClientHeight    =   4410
-   ClientLeft      =   120
-   ClientTop       =   465
+   ClientLeft      =   45
+   ClientTop       =   390
    ClientWidth     =   8760
+   Icon            =   "FKBelahKetupat.frx":0000
    LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
    ScaleHeight     =   4410
    ScaleWidth      =   8760
    StartUpPosition =   3  'Windows Default
@@ -18,7 +22,7 @@ Begin VB.Form FKBelahKetupat
       Width           =   1215
    End
    Begin VB.CommandButton CKBKHitung 
-      BackColor       =   &H008080FF&
+      BackColor       =   &H00C0C0C0&
       Caption         =   "Hitung Keliling"
       Height          =   495
       Left            =   2520
@@ -84,7 +88,7 @@ Begin VB.Form FKBelahKetupat
    Begin VB.Image Image1 
       Height          =   4500
       Left            =   4200
-      Picture         =   "FKBelahKetupat.frx":0000
+      Picture         =   "FKBelahKetupat.frx":048A
       Top             =   -120
       Width           =   4500
    End
@@ -113,10 +117,20 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub CKBKHitung_Click()
+If (TKBKSisi.Text = "") Then
+MsgBox "Sisi Tidak Boleh Kosong"
+Else
+If IsNumeric(TKBKSisi.Text) Then
 TKBelahKetupat = 4 * TKBKSisi
+Else
+MsgBox "bukan angka"
+TKBKSisi.Text = ""
+End If
+End If
 End Sub
 
 Private Sub CKBKTutup_Click()
 FKBelahKetupat.Visible = False
+Unload Me
 End Sub
 
