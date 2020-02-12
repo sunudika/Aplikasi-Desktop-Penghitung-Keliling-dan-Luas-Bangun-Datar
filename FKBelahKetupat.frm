@@ -118,13 +118,14 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub CKBKHitung_Click()
 If (TKBKSisi.Text = "") Then
-MsgBox "Sisi Tidak Boleh Kosong"
+    MsgBox "Sisi Tidak Boleh Kosong"
 Else
-If IsNumeric(TKBKSisi.Text) Then
-TKBelahKetupat = 4 * TKBKSisi
-Else
-MsgBox "bukan angka"
-TKBKSisi.Text = ""
+    If IsNumeric(TKBKSisi.Text) Then
+        Dim hitung As New BangunDatar
+        TKBelahKetupat.Text = hitung.kBelahK(Val(TKBKSisi))
+    Else
+        MsgBox "bukan angka"
+        TKBKSisi.Text = ""
 End If
 End If
 End Sub

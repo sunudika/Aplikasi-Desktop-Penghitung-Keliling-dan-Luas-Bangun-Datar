@@ -19,6 +19,7 @@ Form=FKLingkaran.frm
 Form=FKBelahKetupat.frm
 Form=FPenulis.frm
 Form=FTugas.frm
+Class=BangunDatar; Class1.cls
 IconForm="FUtama"
 Startup="FUtama"
 HelpFile=""
